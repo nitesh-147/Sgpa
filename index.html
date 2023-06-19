@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>SGPA Calculator</h1>
+    <form>
+      <label for="subject-name">Subject Name:</label>
+      <input type="text" id="subject-name" required>
+      <label for="subject-grade">Grade:</label>
+      <select id="subject-grade" required>
+        <option value="">Select Grade</option>
+        <option value="O">O</option>
+        <option value="E">E</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="F">F</option>
+      </select>
+      <label for="subject-credit">Credit:</label>
+      <input type="number" id="subject-credit" min="1" required>
+      <button type="button" id="add-subject">Add Subject</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Subject Name</th>
+          <th>Grade</th>
+          <th>Credit</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="subject-list">
+      </tbody>
+    </table>
+    <div id="sgpa"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
